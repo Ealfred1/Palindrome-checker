@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: monospace;
+    background: #393737;
+}
+
+.container {
+    width: 430px;
+    height: 360px;
+    display: block;
+	border-radius: 34px;
+	background: linear-gradient(315deg, #333232, #3d3b3b);
+	box-shadow:  -26px -26px 64px #2f2d2d,
+				 26px 26px 64px #434141;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(315deg, #12f916, #b40ce7);
+	font-size: 30px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 60px;
+	letter-spacing: 3px;
+}
+
+.input {
+	position: relative;
+}
+
+#text {
+	width: 90%;
+	border: 2px solid #b40ce7;
+	display: block;
+	background: none;
+	padding: 10px 15px;
+	margin: 15px;
+	outline: none;
+	color: white;
+	font-size; 15px;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.input .x {
+	position: absolute;
+	cursor: pointer;
+	top: 7px;
+	right: 52px;
+	color: white;
+	font-size: 20px;
+	display: none;
+}
+
+#text:focus {
+	box-shadow: 0 0 7px #b40ce7;
+}
+
+::placeholder {
+	color: white;
+}
+
+.buttons {
+	display: flex;
+}
+
+button, a {
+	width: 100%;
+	margin: 3%;
+	outline: none;
+	background: linear-gradient(315deg, #12f916, #b40ce7);
+	height: 8vh;
+	border: none;
+	border-radius: 40px;
+	color: white;
+	text-align: center;
+}
+
+button:hover, button:active, a:hover {
+	opacity: 0.8;
+}
+
+.area {
+	width: 95%;
+	height: 40%;
+	border: 2px solid;
+	border-color: #b40ce7;
+	margin-left: 10px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px;
+	resize: none;
+}
+
+.area:hover {
+	box-shadow: 0 0 5px #888;
+}
+
